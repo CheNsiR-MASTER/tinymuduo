@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/admin/linux/tinyMuduo/Eventloop.cc
+Eventloop.h
+/home/admin/linux/tinyMuduo/Eventloop.h
+
+/home/admin/linux/tinyMuduo/Eventloop.h
+
 /home/admin/linux/tinyMuduo/Logger.cc
 Logger.h
 /home/admin/linux/tinyMuduo/Logger.h
@@ -20,6 +26,8 @@ string
 noncopyable.h
 /home/admin/linux/tinyMuduo/noncopyable.h
 
+/home/admin/linux/tinyMuduo/TcpServer.cc
+
 /home/admin/linux/tinyMuduo/Timestamp.cc
 Timestamp.h
 /home/admin/linux/tinyMuduo/Timestamp.h
@@ -30,6 +38,26 @@ time.h
 iostream
 -
 string
+-
+
+/home/admin/linux/tinyMuduo/channel.cc
+channel.h
+/home/admin/linux/tinyMuduo/channel.h
+Logger.h
+/home/admin/linux/tinyMuduo/Logger.h
+sys/epoll.h
+/home/admin/linux/tinyMuduo/sys/epoll.h
+
+/home/admin/linux/tinyMuduo/channel.h
+noncopyable.h
+/home/admin/linux/tinyMuduo/noncopyable.h
+Timestamp.h
+/home/admin/linux/tinyMuduo/Timestamp.h
+Eventloop.h
+/home/admin/linux/tinyMuduo/Eventloop.h
+functional
+-
+memory
 -
 
 /home/admin/linux/tinyMuduo/noncopyable.h

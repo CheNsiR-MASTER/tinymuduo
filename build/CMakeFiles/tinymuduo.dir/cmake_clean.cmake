@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/tinymuduo.dir/Eventloop.o"
   "CMakeFiles/tinymuduo.dir/Logger.o"
+  "CMakeFiles/tinymuduo.dir/TcpServer.o"
   "CMakeFiles/tinymuduo.dir/Timestamp.o"
+  "CMakeFiles/tinymuduo.dir/channel.o"
   "../lib/libtinymuduo.pdb"
   "../lib/libtinymuduo.so"
 )

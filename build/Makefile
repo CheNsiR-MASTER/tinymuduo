@@ -124,6 +124,21 @@ tinymuduo/fast:
 .PHONY : tinymuduo/fast
 
 # target to build an object file
+Eventloop.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Eventloop.o
+.PHONY : Eventloop.o
+
+# target to preprocess a source file
+Eventloop.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Eventloop.i
+.PHONY : Eventloop.i
+
+# target to generate assembly for a file
+Eventloop.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Eventloop.s
+.PHONY : Eventloop.s
+
+# target to build an object file
 Logger.o:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Logger.o
 .PHONY : Logger.o
@@ -137,6 +152,21 @@ Logger.i:
 Logger.s:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Logger.s
 .PHONY : Logger.s
+
+# target to build an object file
+TcpServer.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/TcpServer.o
+.PHONY : TcpServer.o
+
+# target to preprocess a source file
+TcpServer.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/TcpServer.i
+.PHONY : TcpServer.i
+
+# target to generate assembly for a file
+TcpServer.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/TcpServer.s
+.PHONY : TcpServer.s
 
 # target to build an object file
 Timestamp.o:
@@ -153,6 +183,21 @@ Timestamp.s:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Timestamp.s
 .PHONY : Timestamp.s
 
+# target to build an object file
+channel.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/channel.o
+.PHONY : channel.o
+
+# target to preprocess a source file
+channel.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/channel.i
+.PHONY : channel.i
+
+# target to generate assembly for a file
+channel.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/channel.s
+.PHONY : channel.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,12 +207,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tinymuduo"
 	@echo "... edit_cache"
+	@echo "... Eventloop.o"
+	@echo "... Eventloop.i"
+	@echo "... Eventloop.s"
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"
+	@echo "... TcpServer.o"
+	@echo "... TcpServer.i"
+	@echo "... TcpServer.s"
 	@echo "... Timestamp.o"
 	@echo "... Timestamp.i"
 	@echo "... Timestamp.s"
+	@echo "... channel.o"
+	@echo "... channel.i"
+	@echo "... channel.s"
 .PHONY : help
 
 

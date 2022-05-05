@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/admin/linux/tinyMuduo/Eventloop.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/Eventloop.o"
   "/home/admin/linux/tinyMuduo/Logger.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/Logger.o"
+  "/home/admin/linux/tinyMuduo/TcpServer.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/TcpServer.o"
   "/home/admin/linux/tinyMuduo/Timestamp.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/Timestamp.o"
+  "/home/admin/linux/tinyMuduo/channel.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/channel.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

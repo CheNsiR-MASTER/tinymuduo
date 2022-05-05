@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/admin/linux/tinyMuduo/build
 CMakeFiles/tinymuduo.dir/all:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/depend
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=1,2,3 "Built target tinymuduo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target tinymuduo"
 .PHONY : CMakeFiles/tinymuduo.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/tinymuduo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tinymuduo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/linux/tinyMuduo/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/linux/tinyMuduo/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tinymuduo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/linux/tinyMuduo/build/CMakeFiles 0
 .PHONY : CMakeFiles/tinymuduo.dir/rule
