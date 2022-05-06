@@ -28,6 +28,7 @@ public:
     // 退出事件循环
     void quit();
 
+    void wakeup();
     Timestamp pollReturnTime() const { return pollReturnTime_; }
 
     // 在当前loop中执行 cb
