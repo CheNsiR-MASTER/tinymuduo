@@ -4,11 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/admin/linux/tinyMuduo/CurrentThread.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/CurrentThread.o"
+  "/home/admin/linux/tinyMuduo/EpollPoller.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/EpollPoller.o"
   "/home/admin/linux/tinyMuduo/Eventloop.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/Eventloop.o"
   "/home/admin/linux/tinyMuduo/Logger.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/Logger.o"
+  "/home/admin/linux/tinyMuduo/Poller.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/Poller.o"
   "/home/admin/linux/tinyMuduo/TcpServer.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/TcpServer.o"
   "/home/admin/linux/tinyMuduo/Timestamp.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/Timestamp.o"
   "/home/admin/linux/tinyMuduo/channel.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/channel.o"
+  "/home/admin/linux/tinyMuduo/newDefaultPoller.cc" "/home/admin/linux/tinyMuduo/build/CMakeFiles/tinymuduo.dir/newDefaultPoller.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

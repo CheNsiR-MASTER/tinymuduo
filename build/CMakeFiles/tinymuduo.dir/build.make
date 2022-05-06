@@ -57,9 +57,57 @@ include CMakeFiles/tinymuduo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tinymuduo.dir/flags.make
 
+CMakeFiles/tinymuduo.dir/CurrentThread.o: CMakeFiles/tinymuduo.dir/flags.make
+CMakeFiles/tinymuduo.dir/CurrentThread.o: ../CurrentThread.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tinymuduo.dir/CurrentThread.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinymuduo.dir/CurrentThread.o -c /home/admin/linux/tinyMuduo/CurrentThread.cc
+
+CMakeFiles/tinymuduo.dir/CurrentThread.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinymuduo.dir/CurrentThread.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/linux/tinyMuduo/CurrentThread.cc > CMakeFiles/tinymuduo.dir/CurrentThread.i
+
+CMakeFiles/tinymuduo.dir/CurrentThread.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinymuduo.dir/CurrentThread.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/linux/tinyMuduo/CurrentThread.cc -o CMakeFiles/tinymuduo.dir/CurrentThread.s
+
+CMakeFiles/tinymuduo.dir/CurrentThread.o.requires:
+
+.PHONY : CMakeFiles/tinymuduo.dir/CurrentThread.o.requires
+
+CMakeFiles/tinymuduo.dir/CurrentThread.o.provides: CMakeFiles/tinymuduo.dir/CurrentThread.o.requires
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/CurrentThread.o.provides.build
+.PHONY : CMakeFiles/tinymuduo.dir/CurrentThread.o.provides
+
+CMakeFiles/tinymuduo.dir/CurrentThread.o.provides.build: CMakeFiles/tinymuduo.dir/CurrentThread.o
+
+
+CMakeFiles/tinymuduo.dir/EpollPoller.o: CMakeFiles/tinymuduo.dir/flags.make
+CMakeFiles/tinymuduo.dir/EpollPoller.o: ../EpollPoller.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tinymuduo.dir/EpollPoller.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinymuduo.dir/EpollPoller.o -c /home/admin/linux/tinyMuduo/EpollPoller.cc
+
+CMakeFiles/tinymuduo.dir/EpollPoller.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinymuduo.dir/EpollPoller.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/linux/tinyMuduo/EpollPoller.cc > CMakeFiles/tinymuduo.dir/EpollPoller.i
+
+CMakeFiles/tinymuduo.dir/EpollPoller.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinymuduo.dir/EpollPoller.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/linux/tinyMuduo/EpollPoller.cc -o CMakeFiles/tinymuduo.dir/EpollPoller.s
+
+CMakeFiles/tinymuduo.dir/EpollPoller.o.requires:
+
+.PHONY : CMakeFiles/tinymuduo.dir/EpollPoller.o.requires
+
+CMakeFiles/tinymuduo.dir/EpollPoller.o.provides: CMakeFiles/tinymuduo.dir/EpollPoller.o.requires
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/EpollPoller.o.provides.build
+.PHONY : CMakeFiles/tinymuduo.dir/EpollPoller.o.provides
+
+CMakeFiles/tinymuduo.dir/EpollPoller.o.provides.build: CMakeFiles/tinymuduo.dir/EpollPoller.o
+
+
 CMakeFiles/tinymuduo.dir/Eventloop.o: CMakeFiles/tinymuduo.dir/flags.make
 CMakeFiles/tinymuduo.dir/Eventloop.o: ../Eventloop.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tinymuduo.dir/Eventloop.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tinymuduo.dir/Eventloop.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinymuduo.dir/Eventloop.o -c /home/admin/linux/tinyMuduo/Eventloop.cc
 
 CMakeFiles/tinymuduo.dir/Eventloop.i: cmake_force
@@ -83,7 +131,7 @@ CMakeFiles/tinymuduo.dir/Eventloop.o.provides.build: CMakeFiles/tinymuduo.dir/Ev
 
 CMakeFiles/tinymuduo.dir/Logger.o: CMakeFiles/tinymuduo.dir/flags.make
 CMakeFiles/tinymuduo.dir/Logger.o: ../Logger.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tinymuduo.dir/Logger.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tinymuduo.dir/Logger.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinymuduo.dir/Logger.o -c /home/admin/linux/tinyMuduo/Logger.cc
 
 CMakeFiles/tinymuduo.dir/Logger.i: cmake_force
@@ -105,9 +153,33 @@ CMakeFiles/tinymuduo.dir/Logger.o.provides: CMakeFiles/tinymuduo.dir/Logger.o.re
 CMakeFiles/tinymuduo.dir/Logger.o.provides.build: CMakeFiles/tinymuduo.dir/Logger.o
 
 
+CMakeFiles/tinymuduo.dir/Poller.o: CMakeFiles/tinymuduo.dir/flags.make
+CMakeFiles/tinymuduo.dir/Poller.o: ../Poller.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tinymuduo.dir/Poller.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinymuduo.dir/Poller.o -c /home/admin/linux/tinyMuduo/Poller.cc
+
+CMakeFiles/tinymuduo.dir/Poller.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinymuduo.dir/Poller.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/linux/tinyMuduo/Poller.cc > CMakeFiles/tinymuduo.dir/Poller.i
+
+CMakeFiles/tinymuduo.dir/Poller.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinymuduo.dir/Poller.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/linux/tinyMuduo/Poller.cc -o CMakeFiles/tinymuduo.dir/Poller.s
+
+CMakeFiles/tinymuduo.dir/Poller.o.requires:
+
+.PHONY : CMakeFiles/tinymuduo.dir/Poller.o.requires
+
+CMakeFiles/tinymuduo.dir/Poller.o.provides: CMakeFiles/tinymuduo.dir/Poller.o.requires
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Poller.o.provides.build
+.PHONY : CMakeFiles/tinymuduo.dir/Poller.o.provides
+
+CMakeFiles/tinymuduo.dir/Poller.o.provides.build: CMakeFiles/tinymuduo.dir/Poller.o
+
+
 CMakeFiles/tinymuduo.dir/TcpServer.o: CMakeFiles/tinymuduo.dir/flags.make
 CMakeFiles/tinymuduo.dir/TcpServer.o: ../TcpServer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tinymuduo.dir/TcpServer.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tinymuduo.dir/TcpServer.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinymuduo.dir/TcpServer.o -c /home/admin/linux/tinyMuduo/TcpServer.cc
 
 CMakeFiles/tinymuduo.dir/TcpServer.i: cmake_force
@@ -131,7 +203,7 @@ CMakeFiles/tinymuduo.dir/TcpServer.o.provides.build: CMakeFiles/tinymuduo.dir/Tc
 
 CMakeFiles/tinymuduo.dir/Timestamp.o: CMakeFiles/tinymuduo.dir/flags.make
 CMakeFiles/tinymuduo.dir/Timestamp.o: ../Timestamp.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tinymuduo.dir/Timestamp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tinymuduo.dir/Timestamp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinymuduo.dir/Timestamp.o -c /home/admin/linux/tinyMuduo/Timestamp.cc
 
 CMakeFiles/tinymuduo.dir/Timestamp.i: cmake_force
@@ -155,7 +227,7 @@ CMakeFiles/tinymuduo.dir/Timestamp.o.provides.build: CMakeFiles/tinymuduo.dir/Ti
 
 CMakeFiles/tinymuduo.dir/channel.o: CMakeFiles/tinymuduo.dir/flags.make
 CMakeFiles/tinymuduo.dir/channel.o: ../channel.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tinymuduo.dir/channel.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tinymuduo.dir/channel.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinymuduo.dir/channel.o -c /home/admin/linux/tinyMuduo/channel.cc
 
 CMakeFiles/tinymuduo.dir/channel.i: cmake_force
@@ -177,25 +249,57 @@ CMakeFiles/tinymuduo.dir/channel.o.provides: CMakeFiles/tinymuduo.dir/channel.o.
 CMakeFiles/tinymuduo.dir/channel.o.provides.build: CMakeFiles/tinymuduo.dir/channel.o
 
 
+CMakeFiles/tinymuduo.dir/newDefaultPoller.o: CMakeFiles/tinymuduo.dir/flags.make
+CMakeFiles/tinymuduo.dir/newDefaultPoller.o: ../newDefaultPoller.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tinymuduo.dir/newDefaultPoller.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinymuduo.dir/newDefaultPoller.o -c /home/admin/linux/tinyMuduo/newDefaultPoller.cc
+
+CMakeFiles/tinymuduo.dir/newDefaultPoller.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinymuduo.dir/newDefaultPoller.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/linux/tinyMuduo/newDefaultPoller.cc > CMakeFiles/tinymuduo.dir/newDefaultPoller.i
+
+CMakeFiles/tinymuduo.dir/newDefaultPoller.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinymuduo.dir/newDefaultPoller.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/linux/tinyMuduo/newDefaultPoller.cc -o CMakeFiles/tinymuduo.dir/newDefaultPoller.s
+
+CMakeFiles/tinymuduo.dir/newDefaultPoller.o.requires:
+
+.PHONY : CMakeFiles/tinymuduo.dir/newDefaultPoller.o.requires
+
+CMakeFiles/tinymuduo.dir/newDefaultPoller.o.provides: CMakeFiles/tinymuduo.dir/newDefaultPoller.o.requires
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/newDefaultPoller.o.provides.build
+.PHONY : CMakeFiles/tinymuduo.dir/newDefaultPoller.o.provides
+
+CMakeFiles/tinymuduo.dir/newDefaultPoller.o.provides.build: CMakeFiles/tinymuduo.dir/newDefaultPoller.o
+
+
 # Object files for target tinymuduo
 tinymuduo_OBJECTS = \
+"CMakeFiles/tinymuduo.dir/CurrentThread.o" \
+"CMakeFiles/tinymuduo.dir/EpollPoller.o" \
 "CMakeFiles/tinymuduo.dir/Eventloop.o" \
 "CMakeFiles/tinymuduo.dir/Logger.o" \
+"CMakeFiles/tinymuduo.dir/Poller.o" \
 "CMakeFiles/tinymuduo.dir/TcpServer.o" \
 "CMakeFiles/tinymuduo.dir/Timestamp.o" \
-"CMakeFiles/tinymuduo.dir/channel.o"
+"CMakeFiles/tinymuduo.dir/channel.o" \
+"CMakeFiles/tinymuduo.dir/newDefaultPoller.o"
 
 # External object files for target tinymuduo
 tinymuduo_EXTERNAL_OBJECTS =
 
+../lib/libtinymuduo.so: CMakeFiles/tinymuduo.dir/CurrentThread.o
+../lib/libtinymuduo.so: CMakeFiles/tinymuduo.dir/EpollPoller.o
 ../lib/libtinymuduo.so: CMakeFiles/tinymuduo.dir/Eventloop.o
 ../lib/libtinymuduo.so: CMakeFiles/tinymuduo.dir/Logger.o
+../lib/libtinymuduo.so: CMakeFiles/tinymuduo.dir/Poller.o
 ../lib/libtinymuduo.so: CMakeFiles/tinymuduo.dir/TcpServer.o
 ../lib/libtinymuduo.so: CMakeFiles/tinymuduo.dir/Timestamp.o
 ../lib/libtinymuduo.so: CMakeFiles/tinymuduo.dir/channel.o
+../lib/libtinymuduo.so: CMakeFiles/tinymuduo.dir/newDefaultPoller.o
 ../lib/libtinymuduo.so: CMakeFiles/tinymuduo.dir/build.make
 ../lib/libtinymuduo.so: CMakeFiles/tinymuduo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library ../lib/libtinymuduo.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/linux/tinyMuduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library ../lib/libtinymuduo.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tinymuduo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -203,11 +307,15 @@ CMakeFiles/tinymuduo.dir/build: ../lib/libtinymuduo.so
 
 .PHONY : CMakeFiles/tinymuduo.dir/build
 
+CMakeFiles/tinymuduo.dir/requires: CMakeFiles/tinymuduo.dir/CurrentThread.o.requires
+CMakeFiles/tinymuduo.dir/requires: CMakeFiles/tinymuduo.dir/EpollPoller.o.requires
 CMakeFiles/tinymuduo.dir/requires: CMakeFiles/tinymuduo.dir/Eventloop.o.requires
 CMakeFiles/tinymuduo.dir/requires: CMakeFiles/tinymuduo.dir/Logger.o.requires
+CMakeFiles/tinymuduo.dir/requires: CMakeFiles/tinymuduo.dir/Poller.o.requires
 CMakeFiles/tinymuduo.dir/requires: CMakeFiles/tinymuduo.dir/TcpServer.o.requires
 CMakeFiles/tinymuduo.dir/requires: CMakeFiles/tinymuduo.dir/Timestamp.o.requires
 CMakeFiles/tinymuduo.dir/requires: CMakeFiles/tinymuduo.dir/channel.o.requires
+CMakeFiles/tinymuduo.dir/requires: CMakeFiles/tinymuduo.dir/newDefaultPoller.o.requires
 
 .PHONY : CMakeFiles/tinymuduo.dir/requires
 

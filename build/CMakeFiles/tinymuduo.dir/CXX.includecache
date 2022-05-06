@@ -6,11 +6,41 @@
 
 #IncludeRegexTransform: 
 
+/home/admin/linux/tinyMuduo/CurrentThread.cc
+CurrentThread.h
+/home/admin/linux/tinyMuduo/CurrentThread.h
+
+/home/admin/linux/tinyMuduo/CurrentThread.h
+unistd.h
+-
+syscall.h
+-
+
+/home/admin/linux/tinyMuduo/EpollPoller.cc
+EpollPoller.h
+/home/admin/linux/tinyMuduo/EpollPoller.h
+
+/home/admin/linux/tinyMuduo/EpollPoller.h
+Poller.h
+/home/admin/linux/tinyMuduo/Poller.h
+Eventloop.h
+/home/admin/linux/tinyMuduo/Eventloop.h
+Logger.h
+/home/admin/linux/tinyMuduo/Logger.h
+sys/epoll.h
+-
+unistd.h
+-
+strings.h
+-
+
 /home/admin/linux/tinyMuduo/Eventloop.cc
 Eventloop.h
 /home/admin/linux/tinyMuduo/Eventloop.h
 
 /home/admin/linux/tinyMuduo/Eventloop.h
+noncopyable.h
+/home/admin/linux/tinyMuduo/noncopyable.h
 
 /home/admin/linux/tinyMuduo/Logger.cc
 Logger.h
@@ -25,6 +55,22 @@ string
 -
 noncopyable.h
 /home/admin/linux/tinyMuduo/noncopyable.h
+
+/home/admin/linux/tinyMuduo/Poller.cc
+Poller.h
+/home/admin/linux/tinyMuduo/Poller.h
+
+/home/admin/linux/tinyMuduo/Poller.h
+noncopyable.h
+/home/admin/linux/tinyMuduo/noncopyable.h
+Timestamp.h
+/home/admin/linux/tinyMuduo/Timestamp.h
+channel.h
+/home/admin/linux/tinyMuduo/channel.h
+vector
+-
+unordered_map
+-
 
 /home/admin/linux/tinyMuduo/TcpServer.cc
 
@@ -58,6 +104,12 @@ Eventloop.h
 functional
 -
 memory
+-
+
+/home/admin/linux/tinyMuduo/newDefaultPoller.cc
+Poller.h
+/home/admin/linux/tinyMuduo/Poller.h
+stdlib.h
 -
 
 /home/admin/linux/tinyMuduo/noncopyable.h

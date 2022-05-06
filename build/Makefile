@@ -124,6 +124,36 @@ tinymuduo/fast:
 .PHONY : tinymuduo/fast
 
 # target to build an object file
+CurrentThread.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/CurrentThread.o
+.PHONY : CurrentThread.o
+
+# target to preprocess a source file
+CurrentThread.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/CurrentThread.i
+.PHONY : CurrentThread.i
+
+# target to generate assembly for a file
+CurrentThread.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/CurrentThread.s
+.PHONY : CurrentThread.s
+
+# target to build an object file
+EpollPoller.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/EpollPoller.o
+.PHONY : EpollPoller.o
+
+# target to preprocess a source file
+EpollPoller.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/EpollPoller.i
+.PHONY : EpollPoller.i
+
+# target to generate assembly for a file
+EpollPoller.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/EpollPoller.s
+.PHONY : EpollPoller.s
+
+# target to build an object file
 Eventloop.o:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Eventloop.o
 .PHONY : Eventloop.o
@@ -152,6 +182,21 @@ Logger.i:
 Logger.s:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Logger.s
 .PHONY : Logger.s
+
+# target to build an object file
+Poller.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Poller.o
+.PHONY : Poller.o
+
+# target to preprocess a source file
+Poller.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Poller.i
+.PHONY : Poller.i
+
+# target to generate assembly for a file
+Poller.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Poller.s
+.PHONY : Poller.s
 
 # target to build an object file
 TcpServer.o:
@@ -198,6 +243,21 @@ channel.s:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/channel.s
 .PHONY : channel.s
 
+# target to build an object file
+newDefaultPoller.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/newDefaultPoller.o
+.PHONY : newDefaultPoller.o
+
+# target to preprocess a source file
+newDefaultPoller.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/newDefaultPoller.i
+.PHONY : newDefaultPoller.i
+
+# target to generate assembly for a file
+newDefaultPoller.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/newDefaultPoller.s
+.PHONY : newDefaultPoller.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -207,12 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tinymuduo"
 	@echo "... edit_cache"
+	@echo "... CurrentThread.o"
+	@echo "... CurrentThread.i"
+	@echo "... CurrentThread.s"
+	@echo "... EpollPoller.o"
+	@echo "... EpollPoller.i"
+	@echo "... EpollPoller.s"
 	@echo "... Eventloop.o"
 	@echo "... Eventloop.i"
 	@echo "... Eventloop.s"
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"
+	@echo "... Poller.o"
+	@echo "... Poller.i"
+	@echo "... Poller.s"
 	@echo "... TcpServer.o"
 	@echo "... TcpServer.i"
 	@echo "... TcpServer.s"
@@ -222,6 +291,9 @@ help:
 	@echo "... channel.o"
 	@echo "... channel.i"
 	@echo "... channel.s"
+	@echo "... newDefaultPoller.o"
+	@echo "... newDefaultPoller.i"
+	@echo "... newDefaultPoller.s"
 .PHONY : help
 
 
