@@ -23,8 +23,7 @@ EventLoop::EventLoop()
     threadId_(CurrentThread::tid()),
     poller_(Poller::newDefaultPoller(this)),
     wakeupFd_(createEventfd()),
-    wakeupChannel_(new Channel(this, wakeupFd_)),
-    currentActiveChannels_(NULL)  
+    wakeupChannel_(new Channel(this, wakeupFd_))
 {
     LOG_DEBUG("EVENT loop create %p in thread %d \n",this,threadId_);
     if(t_loopInThisThread)
@@ -50,7 +49,7 @@ void EventLoop::handleRead()
     ssize_t n = read(wakeupFd_, &one, sizeof one);
     if (n != sizeof one)
     {
-        LOG_ERROR ("EventLoop::handleRead() reads %d bytes instead of 8" , n);
+        LOG_ERROR ("EventLoop::handleRead() reads %d bytes instead of 8" , (int)n);
     }
 }
 
@@ -141,7 +140,7 @@ void EventLoop::wakeup()
     ssize_t n = write(wakeupFd_, &one, sizeof n);
     if(n != sizeof one)
     {
-        LOG_ERROR("EventLoop::wakeup() writes %d bytes instead of 8",n );
+        LOG_ERROR("EventLoop::wakeup() writes %d bytes instead of 8",(int)n );
     }
 }
 

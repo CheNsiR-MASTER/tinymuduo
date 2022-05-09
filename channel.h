@@ -6,6 +6,8 @@
 
 #include <functional>
 #include <memory>
+
+class EventLoop;
 // Channel 理解为通道，封装了 Sockfd 和 其感兴趣的 event，如 EPOLLIN EPOLLOUT
 class Channel : noncopyable
 {
@@ -29,7 +31,7 @@ public:
     { errorCallback_ = std::move(cb); }
 
     // 使 weakptr 升级为 sharedptr
-    void tie(std::shared_ptr<void> &);
+    void tie(const std::shared_ptr<void> &);
 
     int fd() const { return fd_; }
     int events() const { return events_; }
@@ -40,8 +42,8 @@ public:
     void disableReading() { events_ &= ~kReadEvents; update(); }
     void enableWritting() { events_ |= kWriteEvents; update(); }
     void disableWritting() { events_ &= ~kWriteEvents; update(); }
-    void disableAll() { events_ |= kNoneEvents; update(); }
 
+    void disableAll() { events_ |= kNoneEvents; update(); }
     // 判断 events 的状态
     bool isNoneEvent() const { return events_ == kNoneEvents; }
     bool isReadint() const { return events_ & kReadEvents; }

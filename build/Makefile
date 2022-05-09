@@ -124,6 +124,36 @@ tinymuduo/fast:
 .PHONY : tinymuduo/fast
 
 # target to build an object file
+Acceptor.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Acceptor.o
+.PHONY : Acceptor.o
+
+# target to preprocess a source file
+Acceptor.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Acceptor.i
+.PHONY : Acceptor.i
+
+# target to generate assembly for a file
+Acceptor.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Acceptor.s
+.PHONY : Acceptor.s
+
+# target to build an object file
+Buffer.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Buffer.o
+.PHONY : Buffer.o
+
+# target to preprocess a source file
+Buffer.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Buffer.i
+.PHONY : Buffer.i
+
+# target to generate assembly for a file
+Buffer.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Buffer.s
+.PHONY : Buffer.s
+
+# target to build an object file
 CurrentThread.o:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/CurrentThread.o
 .PHONY : CurrentThread.o
@@ -154,6 +184,36 @@ EpollPoller.s:
 .PHONY : EpollPoller.s
 
 # target to build an object file
+EventLoopThread.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/EventLoopThread.o
+.PHONY : EventLoopThread.o
+
+# target to preprocess a source file
+EventLoopThread.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/EventLoopThread.i
+.PHONY : EventLoopThread.i
+
+# target to generate assembly for a file
+EventLoopThread.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/EventLoopThread.s
+.PHONY : EventLoopThread.s
+
+# target to build an object file
+EventLoopThreadPool.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/EventLoopThreadPool.o
+.PHONY : EventLoopThreadPool.o
+
+# target to preprocess a source file
+EventLoopThreadPool.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/EventLoopThreadPool.i
+.PHONY : EventLoopThreadPool.i
+
+# target to generate assembly for a file
+EventLoopThreadPool.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/EventLoopThreadPool.s
+.PHONY : EventLoopThreadPool.s
+
+# target to build an object file
 Eventloop.o:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Eventloop.o
 .PHONY : Eventloop.o
@@ -167,6 +227,21 @@ Eventloop.i:
 Eventloop.s:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Eventloop.s
 .PHONY : Eventloop.s
+
+# target to build an object file
+InetAddress.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/InetAddress.o
+.PHONY : InetAddress.o
+
+# target to preprocess a source file
+InetAddress.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/InetAddress.i
+.PHONY : InetAddress.i
+
+# target to generate assembly for a file
+InetAddress.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/InetAddress.s
+.PHONY : InetAddress.s
 
 # target to build an object file
 Logger.o:
@@ -199,6 +274,36 @@ Poller.s:
 .PHONY : Poller.s
 
 # target to build an object file
+Socket.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Socket.o
+.PHONY : Socket.o
+
+# target to preprocess a source file
+Socket.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Socket.i
+.PHONY : Socket.i
+
+# target to generate assembly for a file
+Socket.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Socket.s
+.PHONY : Socket.s
+
+# target to build an object file
+TcpConnection.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/TcpConnection.o
+.PHONY : TcpConnection.o
+
+# target to preprocess a source file
+TcpConnection.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/TcpConnection.i
+.PHONY : TcpConnection.i
+
+# target to generate assembly for a file
+TcpConnection.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/TcpConnection.s
+.PHONY : TcpConnection.s
+
+# target to build an object file
 TcpServer.o:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/TcpServer.o
 .PHONY : TcpServer.o
@@ -212,6 +317,21 @@ TcpServer.i:
 TcpServer.s:
 	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/TcpServer.s
 .PHONY : TcpServer.s
+
+# target to build an object file
+Thread.o:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Thread.o
+.PHONY : Thread.o
+
+# target to preprocess a source file
+Thread.i:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Thread.i
+.PHONY : Thread.i
+
+# target to generate assembly for a file
+Thread.s:
+	$(MAKE) -f CMakeFiles/tinymuduo.dir/build.make CMakeFiles/tinymuduo.dir/Thread.s
+.PHONY : Thread.s
 
 # target to build an object file
 Timestamp.o:
@@ -267,24 +387,48 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tinymuduo"
 	@echo "... edit_cache"
+	@echo "... Acceptor.o"
+	@echo "... Acceptor.i"
+	@echo "... Acceptor.s"
+	@echo "... Buffer.o"
+	@echo "... Buffer.i"
+	@echo "... Buffer.s"
 	@echo "... CurrentThread.o"
 	@echo "... CurrentThread.i"
 	@echo "... CurrentThread.s"
 	@echo "... EpollPoller.o"
 	@echo "... EpollPoller.i"
 	@echo "... EpollPoller.s"
+	@echo "... EventLoopThread.o"
+	@echo "... EventLoopThread.i"
+	@echo "... EventLoopThread.s"
+	@echo "... EventLoopThreadPool.o"
+	@echo "... EventLoopThreadPool.i"
+	@echo "... EventLoopThreadPool.s"
 	@echo "... Eventloop.o"
 	@echo "... Eventloop.i"
 	@echo "... Eventloop.s"
+	@echo "... InetAddress.o"
+	@echo "... InetAddress.i"
+	@echo "... InetAddress.s"
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"
 	@echo "... Poller.o"
 	@echo "... Poller.i"
 	@echo "... Poller.s"
+	@echo "... Socket.o"
+	@echo "... Socket.i"
+	@echo "... Socket.s"
+	@echo "... TcpConnection.o"
+	@echo "... TcpConnection.i"
+	@echo "... TcpConnection.s"
 	@echo "... TcpServer.o"
 	@echo "... TcpServer.i"
 	@echo "... TcpServer.s"
+	@echo "... Thread.o"
+	@echo "... Thread.i"
+	@echo "... Thread.s"
 	@echo "... Timestamp.o"
 	@echo "... Timestamp.i"
 	@echo "... Timestamp.s"

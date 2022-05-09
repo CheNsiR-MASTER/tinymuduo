@@ -14,6 +14,8 @@
 #include <mutex>
 #include <sys/eventfd.h>
 
+class Poller;
+class Channel;
 // 事件循环类，主要包含了两个大模块 Channel 和 Poller (epoll 的抽象类)
 class EventLoop : noncopyable
 {

@@ -1,5 +1,9 @@
 #include "EpollPoller.h"
 
+#include <errno.h>
+#include <unistd.h>
+#include <strings.h>
+
 const int kNew = -1;
 const int kAdded = 1;
 const int kDeleted = 2;
@@ -25,23 +29,30 @@ EpollPoller::~EpollPoller()
 // poll 封装了 epoll_wait()
 Timestamp EpollPoller::poll(int timeoutMs, ChannelList* activeChannels)
 {
-    int numEvents = epoll_wait(epollfd_,&*events_.begin(),
+        // 实际上应该用LOG_DEBUG输出日志更为合理
+    LOG_INFO("func=%s => fd total count:%lu \n", __FUNCTION__, channels_.size());
+    int numEvents = ::epoll_wait(epollfd_,&*events_.begin(),
             static_cast<int>(events_.size()),timeoutMs);
     
     int saveErrno = errno;
     Timestamp now(time(NULL));
     if(numEvents > 0)
     {
+        LOG_INFO("%d events happened \n", numEvents);
         fillActiveChannels(numEvents,activeChannels);
         if(static_cast<size_t>(events_.size() == numEvents))
         {
             events_.resize(2 * numEvents);
         }
     }
-    else if (numEvents == 0) {}
+    else if (numEvents == 0) {LOG_DEBUG("%s timeout! \n", __FUNCTION__);}
     else 
     {
-        LOG_ERROR("poll error %s \n" , __FUNCTION__);
+        if (saveErrno != EINTR)
+        {
+            errno = saveErrno;
+            LOG_ERROR("EPollPoller::poll() err!");
+        }
     }
     return now;
 }
@@ -111,13 +122,16 @@ void EpollPoller::fillActiveChannels(int numEvents, ChannelList* activeChannels)
 
 void EpollPoller::update(int operation, Channel* channel)
 {
-    struct epoll_event event;
-    bzero(&event,sizeof event);
+    epoll_event event;
+    bzero(&event, sizeof event);
+    
+    int fd = channel->fd();
+
     event.events = channel->events();
-    event.data.fd = channel->fd();
+    event.data.fd = fd; 
     event.data.ptr = channel;
 
-    if(epoll_ctl(epollfd_, operation, event.data.fd, &event) < 0)
+    if(::epoll_ctl(epollfd_, operation, fd, &event) < 0)
     {
         if(channel->index() == kDeleted)
         {

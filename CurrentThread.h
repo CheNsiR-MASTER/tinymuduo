@@ -1,7 +1,7 @@
 #pragma once
 
 #include <unistd.h>
-#include <syscall.h> 
+#include <sys/syscall.h> 
 
 namespace CurrentThread
 {

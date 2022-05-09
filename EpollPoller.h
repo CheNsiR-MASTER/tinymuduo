@@ -5,8 +5,6 @@
 #include "Logger.h"
 
 #include <sys/epoll.h>
-#include <unistd.h>
-#include <strings.h>
 
 struct epoll_event;
 

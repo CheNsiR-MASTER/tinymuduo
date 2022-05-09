@@ -1,10 +1,14 @@
 #include "CurrentThread.h"
 
-void CurrentThread::cacheTid()
+namespace CurrentThread
 {
-    if(cacheTid == 0)
+    __thread int t_cachedTid = 0; 
+    void cacheTid()
     {
-        // 通过系统调用 得到当前线程的值
-        t_cachedTid = static_cast<pid_t>(::syscall(SYS_gettid));
+        if(cacheTid == 0)
+        {
+            // 通过系统调用 得到当前线程的值
+            t_cachedTid = static_cast<pid_t>(::syscall(SYS_gettid));
+        }
     }
-}
+} // namespace CurrentThread

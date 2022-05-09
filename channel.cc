@@ -2,9 +2,9 @@
 #include "Logger.h"
 #include "sys/epoll.h"
 
-const int kNoneEvents = 0;
-const int kReadEvents = EPOLLIN | EPOLLPRI;
-const int kWriteEvents = EPOLLOUT;
+const int Channel::kNoneEvents = 0;
+const int Channel::kReadEvents = EPOLLIN | EPOLLPRI;
+const int Channel::kWriteEvents = EPOLLOUT;
 
 Channel::Channel(EventLoop* loop, int fd)
     :loop_(loop),
@@ -52,7 +52,7 @@ void Channel::handleEventWithGuard(Timestamp receiveTime)
     }
 }
 
-void Channel::tie(std::shared_ptr<void>& obj) 
+void Channel::tie(const std::shared_ptr<void>& obj)
 {
     tie_ = obj;
     tied_ = true;
