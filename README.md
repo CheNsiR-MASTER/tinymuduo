@@ -461,9 +461,3 @@ TcpServer::newConnection()  =>  通过轮询算法，找到一个 subLoop()
 ```
 
 
-
-
-
-## 基于testServer.cc的流程分析
-
-![image-20220511174956204](C:\Users\chensir\AppData\Roaming\Typora\typora-user-images\image-20220511174956204.png)
