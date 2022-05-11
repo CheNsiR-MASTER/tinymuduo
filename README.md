@@ -1,6 +1,6 @@
 # tinymuduo
 
-### 使用方法
+## 使用方法
 
 ```
 在根目录下                   ./autobuild.sh
@@ -8,9 +8,9 @@
 将头文件添加到               /usr/include/tinymuduo
 ```
 
-### 模块解析
+## 模块解析
 
-#### forward ⇒ std::bind
+### forward ⇒ std::bind
 
 ```
 因为，采用了 oop编程，所以使用了大量的bind 绑定 成员函数
@@ -23,7 +23,7 @@
 
 
 
-#### EventLoop、Channel 和 Poller
+### EventLoop、Channel 和 Poller
 
 ```CPP
 对于每一个 fd(文件描述符)都需要创建一个 Channel，通过channel管理fd上发生事件的状态，channel上注册了fd感兴趣的事件，以及Poller返回的事件
@@ -43,7 +43,7 @@ channel::update()  =>  loop->updateChannel()
 
 ```
 
-##### EventLoop中的 loop() 的调用逻辑:
+#### EventLoop中的 loop() 的调用逻辑:
 
 ```CPP
 // EventLoop::loop() 的流程
@@ -60,9 +60,9 @@ EventLoop::loop()
 
 
 
-#### Thread、EventLoopThread、EventLoopThreadPool
+### Thread、EventLoopThread、EventLoopThreadPool
 
-1. ##### Thread
+1. ### Thread
 
    ```
    1. 主要成员函数：
@@ -88,7 +88,7 @@ EventLoop::loop()
    		在新线程外   => sem_wait(&sem);   确保新线程能够确保创建，能够得到 tid
    ```
 
-2. ##### EventLoopThread
+2. ### EventLoopThread
 
    ```
    1. 主要函数:
@@ -149,7 +149,7 @@ EventLoop::loop()
    		loop_ 对象 => EventLoopThreadPool::start() => loops_.push_back(t->startLoop());
    ```
 
-   3. ##### EventLoopThreadPool
+   3. ### EventLoopThreadPool
 
    ```
    1. 主要成员函数：
@@ -184,9 +184,9 @@ EventLoop::loop()
 
    
 
-#### Socket、Acceptor
+## Socket、Acceptor
 
-##### forward  ⇒  InetAddress
+### forward  ⇒  InetAddress
 
 ```cpp
 InetAddress: 封装了 Socket地址类型
@@ -242,7 +242,7 @@ setSockAddr() 的调用逻辑链:
 TcpServer包含一个 Acceptor对象    —>    Acceptor包含一个 Socker对象
 ```
 
-##### Socket模块
+### Socket模块
 
 ```cpp
 主要给sockfd封装了几个成员函数  提供给  Acceptor
@@ -266,7 +266,7 @@ runInLoop() 会唤醒 某个 subLoop() => 调用底层的Channel =>通过 loop =
 用户注册的 newConnectionCallback()
 ```
 
-##### Acceptor模块
+### Acceptor模块
 
 ```cpp
 Acceptor 在 main loop中，负责监听新连接的建立 => 分发给 subloop (分发给 subLoop 是在
@@ -291,9 +291,9 @@ Acceptor的主要成员变量：
 
 
 
-#### TcpConnection、TcpServer
+## TcpConnection、TcpServer
 
-##### TcpConnection
+### TcpConnection
 
 在muduo库中 TcpConnection 被 智能指针管理
 
@@ -341,7 +341,7 @@ EventLoop* 对象
 4. handleClose() : poller 修改了EPOLL的状态 => channel 执行closecallback => handleClose()
 ```
 
-TcpConnection 调用逻辑链:
+### TcpConnection 调用逻辑链:
 
 ```cpp
 TcpConnection 对象的创建  =>  
@@ -364,7 +364,7 @@ TcpConnection 对象的创建  =>
 						=> closeCallback_
 ```
 
-TcpConnectionPtr 的使用
+### TcpConnectionPtr 的使用
 
 ```cpp
 # testserver.cc
@@ -422,7 +422,7 @@ TcpConnectionDestroy() => 在执行了 connectionCallback后  => 执行 channel-
 =>  loop_->queueInLoop(std::bind(writeCompleteCallback_, shared_from_this()))
 ```
 
-##### TcpServer
+### TcpServer
 
 ```cpp
 1. 构造函数
@@ -459,3 +459,11 @@ TcpServer::newConnection()  =>  通过轮询算法，找到一个 subLoop()
 	主要逻辑  =>  开启定义的线程数量的线程池  =>  在当前线程中执行 Acceptor::listen 的回调
 细节处： 使用 原子类型 start_ 确保线程只会创建一次
 ```
+
+
+
+
+
+## 基于testServer.cc的流程分析
+
+![image-20220511174956204](C:\Users\chensir\AppData\Roaming\Typora\typora-user-images\image-20220511174956204.png)
